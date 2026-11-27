@@ -5,6 +5,8 @@ jobs:
   job_1:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
       - run: |
           pwd
           ls -la
