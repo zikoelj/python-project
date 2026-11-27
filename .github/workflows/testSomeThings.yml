@@ -1,0 +1,13 @@
+name: testing some stuff
+on: 
+  workflow_dispatch: 
+
+jobs:
+  job_1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Very Simple Hello World
+        # You may pin to the exact commit or the version.
+        # uses: phwes/simple_hello_world@c055ea4bac8a8afbedabb6f19d575a9533047782
+        uses: phwes/simple_hello_world@v1
+        
