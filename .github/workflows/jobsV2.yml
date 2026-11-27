@@ -8,7 +8,7 @@ jobs:
       - run: |
           echo "hello"
           ls -la
-        working-directory: ..
+        working-directory: ./
         shell: bash
 
       - run: print %ENV
