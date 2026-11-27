@@ -13,4 +13,4 @@ RUN useradd -m appuser
 USER appuser
 
 # Adaptez le point d'entrée à votre projet
-CMD ["python", "src/main.py"]
+CMD ["python", "src/app.py"]
