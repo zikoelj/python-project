@@ -1,0 +1,19 @@
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: "choose your environment"
+        required: true
+        default: "staging"
+        type: choice
+        options:
+          - production
+          - staging
+
+jobs:
+  deploy:
+    runs-on: ubuntu-slim
+    steps:
+      - name: Deploy production
+        run: echo "Deploying application to ${{inputs.environment}}"
+    
