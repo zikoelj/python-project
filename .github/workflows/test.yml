@@ -9,8 +9,8 @@ jobs:
     steps:
       - name: check if a file exists
         run: |
-          if [ -f config.yml ]; then
-            echo "::debug::config.yml exists"
+          if [ -f main.yml ]; then
+            echo "::debug::main.yml exists"
           else
-            echo "::error::config.yml doesnt exists"
+            echo "::error::main.yml doesnt exists"
           fi
