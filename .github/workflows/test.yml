@@ -1,0 +1,16 @@
+# this workflow is used to show how you can display a message error without stoping it.
+name: Add workflow to check for config.yml existence
+on:
+  workflow_dispatch:
+
+jobs:
+  example:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check if a file exists
+        run: |
+          if [ -f config.yml ]; then
+            echo "::debug::config.yml exists"
+          else
+            echo "::error::config.yml doesnt exists"
+          fi
