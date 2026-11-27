@@ -8,7 +8,7 @@ jobs:
       - run: |
           echo "hello"
           echo "ohhhhhh"
-        working-directory: ./temp
+        working-directory: ./
         shell: bash
 
       - run: print %ENV
