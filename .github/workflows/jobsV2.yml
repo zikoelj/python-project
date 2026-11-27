@@ -10,7 +10,7 @@ jobs:
       - run: |
           pwd
           ls -la
-        working-directory: ./
+        working-directory: ./.github/workflows/
         shell: bash
 
       - run: print %ENV
